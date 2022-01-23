@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background: rgb(41, 41, 41);
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.container img{
+    width: 100%;
+    position: absolute;
+    min-height: max-content;
+}
+
+#agenda{
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+#slider{
+    position: relative;
+    -webkit-appearance: none;
+    width: calc( 100% + 40px );
+    background: transparent;
+    outline: none;
+    margin-top: 28%;
+    margin-bottom: 28%;
+    margin-left: -20px;
+}
+
+#slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 50px;
+  background: url("img/arrow.svg"), rgba(0,0,0,0.3);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
